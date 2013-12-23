@@ -8,6 +8,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'oboe-heroku'
 end
 
 group :development, :test do
@@ -21,12 +22,6 @@ group :development, :test do
   gem "rspec-mocks"
   gem "blueprints"
   gem "nifty-generators"
-end
-
-group :engineyard do
-  gem 'pg'
-  gem 'oboe-heroku'
-  gem 'unicorn'
 end
 
 gem 'json'
