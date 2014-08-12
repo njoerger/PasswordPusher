@@ -15,8 +15,13 @@ Make sure you have git and Ruby installed and then:
 ```sh
 git clone git@github.com:pglombardo/PasswordPusher.git
 cd PasswordPusher
+sudo apt-get install libpq-dev
+sudo gem install pg
+sudo apt-get install libsqlite3-dev
+sudo gem install sqlite3 -v '1.3.9'
 bundle install --without development test --deployment
 bundle exec rake db:setup
+sudo gem install foreman
 foreman start
 ```
     
